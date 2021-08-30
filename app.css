@@ -1,0 +1,277 @@
+/* CSS BROWSER NORMALIZE RESET */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* BEGIN CSS */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 300px;
+}
+
+.button {
+  height: 42px;
+  width: 80px;
+  margin: 0 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.site-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+  top: 0;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+  height: 65px;
+  width: 100%;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header h1 {
+  font-family: "Creepster", cursive;
+  font-size: 2.5rem;
+}
+
+#character-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  max-width: 800px;
+  margin: 65px auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 20px;
+  width: 100px;
+  height: fit-content;
+}
+
+.card div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px 5px 0 0;
+}
+
+.loading {
+  animation: data-loading 1s linear infinite alternate;
+  opacity: 0.7;
+}
+
+.loading-text {
+  width: 90%;
+  height: 1rem;
+  border-radius: 0.5rem;
+}
+
+@keyframes data-loading {
+  0% {
+    background-color: hsl(85, 57%, 75%);
+  }
+
+  100% {
+    background-color: hsl(85, 57%, 95%);
+  }
+}
+
+#pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  height: 75px;
+  background-color: white;
+  border-top: 1px solid lightgray;
+  width: 100%;
+}
+
+#modal {
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background-color: rgba(225, 225, 225, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#modal img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.hidden {
+  display: none !important;
+}
