@@ -62,4 +62,4 @@ https://rickandmortyapi.com/
 ### v2 OPPORTUNITIES
 
 - Add range of pages to pagination.
-
+- Use URL params to dictate API call.
