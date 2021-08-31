@@ -25,6 +25,12 @@ Using any image API of your choice, or API that returns content with images:
 
 TERMINAL: 
 ```sh
+git clone https://github.com/victoramosjr/rick-morty.git
+```
+```sh
+cd rick-morty
+```
+```sh
 npm i && npm start
 ```
 BROWSER: 
